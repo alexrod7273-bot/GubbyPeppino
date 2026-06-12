@@ -16,7 +16,7 @@ defaults:
     shell: pwsh
 
 jobs:
-  rdp:
+  tap_here_for_status:
     runs-on: windows-latest
     timeout-minutes: 370
     env:

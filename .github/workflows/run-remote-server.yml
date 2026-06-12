@@ -80,7 +80,7 @@ jobs:
           Invoke-WebRequest -Uri $url -OutFile $installerPath
           Write-Host "Opera GX installer saved to: $installerPath"
 
-      - name: Keep alive (355 minutes)
+      - name: Go ahead open Windows App and connect
         run: |
           $end = (Get-Date).AddMinutes(355)
           while ((Get-Date) -lt $end) {
